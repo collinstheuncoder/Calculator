@@ -19,6 +19,6 @@ const config = {
 		]
 	},
 	plugins: [HtmlWebpackPluginConfig]
-}
+};
 
 module.exports = config;

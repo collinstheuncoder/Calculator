@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && webpack-dev-server --content-base src/ --inline port --8082",
+    "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && webpack-dev-server --content-base src/ --inline --port 8082",
     "build:prod": "webpack -p && xcopy \"src/index.html\" \"dist/\" /F /Y"
   },
   "author": "Collins Orlando",
@@ -22,6 +22,7 @@
     "eslint-plugin-react": "^7.1.0",
     "html-webpack-plugin": "^2.29.0",
     "link": "^0.1.5",
+    "loglevel": "^1.4.1",
     "node-sass": "^4.5.3",
     "npm": "^5.3.0",
     "sass-loader": "^6.0.6",
@@ -30,7 +31,9 @@
     "webpack-dev-server": "^2.6.0"
   },
   "dependencies": {
+    "material-ui": "^0.18.7",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-tap-event-plugin": "^2.0.1"
   }
 }

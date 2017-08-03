@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Header = props => {
+const CalcScreen = () => {
 	return (
 		<div className="text-center">
-			<h2>{props.title}</h2>
+			1 + 1 = 11
 		</div>
-	)
-}
+	);
+};
 
-export default Header;
+export default CalcScreen;
